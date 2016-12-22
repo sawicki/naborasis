@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/main_style.css" rel="stylesheet">
+    <link href="css/setuppage.css" rel="stylesheet">
+    <link href="css/datapage.css" rel="stylesheet">
+    <link href="css/copypage.css" rel="stylesheet">
+    <link href="css/loadsave.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/flatpickr.min.css">
+    <link rel="stylesheet" href="css/cal_color.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="content">
+            <header>
+                <div id="logo">
+                    <img src="media/smalllogo.png" alt="">
+                    <h3>Date Calculator for Nabor ASIS Contract <span id="test">   </span></h3>
+                </div>
+            </header>
+            <nav>
+                <div id="setuptab" class="tabs tabselected">Set Up</div>
+                <div id="datatab" class="tabs">Data</div>
+                <div id="copytab" class="tabs">Copy Output</div>
+                <div id="loadtab" class="tabs">Load/Save</div>
+                <div id="helptab" class="tabs">Instructions</div>
+            </nav>
+            <section id="setuppage" class="tabcontent">
+                <h3>1. Set Property Address</h2>
+                    <div class="flexbox">
+                        <div class="setup1col"></div>
+                        <label for="property">Property Address: </label>
+                        <input type="text" id="property" placeholder="Property Address" tabindex="1">
+                        <div class="setup4col"></div>
+                    </div>
+                    <h3>2. Set Date for Fully Executed Contract</h3>
+                    <div class="flexbox">
+                        <div class="setup1col"></div>
+                        <label for="executed-date"> Executed Contract Date: </label>
+                        <input type="text" id="executed-date" class="flatpickr" placeholder="Select executed date" tabindex="-1">
+                        <div class="setup4col"></div>
+                    </div>
+                    <h3>3. Set Either "Days to Closing" or "Closing Date"</h3>
+                    <div class="border">
+                        <div class='initial-dates'>
+                            <div class="flexbox">
+                                <div class="setup1col"></div>
+                                <label for="daystoclose">Days to closing:  </label>
+                                <input type="text" id="daystoclose" placeholder="Days" tabindex="2" pattern="[0-9]*" />
+                                <div class="setup4col" id="todaysmsg"></div>
+                            </div>
+                        </div>
+                        <div class="flexbox">
+                            <div class="setup1col"></div>
+                            <div class="setup1col"></div>
+                            <div class="setup1col"></div>
+                            <div class="setup1col"></div>
+                            <div>
+                                <h4>Or </h4>
+                            </div>
+                        </div>
+                        <div class='flexbox'>
+                            <div class="setup1col"></div>
+                            <label for="close-date">Closing Date (line 41):</label>
+                            <input type="text" id="close-date" class="flatpickr" placeholder="Closing Date" tabindex="-1">
+                            <div class="setup4col" id="closemsg"></div>
+                        </div class="border">
+                    </div>
+            </section>
+            <section id="datapage" class="tabcontent">
+                <h3 id="datapagetitle">Input Forms</h3>
+                <div>
+                     <div class="flexbox" id="rowheader" data-row='0'>
+                        <div class="col1">Commit/Contingency</div>
+                        <div class="col2">Day</div>
+                        <div class="col3">Date</div>
+                        <div class="col4">Orig Date if WE</div>
+                    </div>
+                    <div class="flexbox" id="escrow1" data-row='1'>
+                        <div class="col1">Escrow 1 (line 24)</div>
+                        <input type="text" pattern="[0-9]*">
+                        <div class="col3"></div>
+                        <div class="col4"></div>
+                    </div>
+                    <div class="flexbox" id="escrow2" data-row='2'>
+                        <div class="col1">Escrow 2 (line 25)</div>
+                        <input type="text" pattern="[0-9]*">
+                        <div class="col3"></div>
+                        <div class="col4"></div>
+                    </div>
+                    <div class="flexbox" id="loanapp" data-row='3'>
+                        <div class="col1">Loan App (line 54)</div>
+                        <input type="text" pattern="[0-9]*">
+                        <div class="col3"></div>
+                        <div class="col4"></div>
+                    </div>
+                    <div class="flexbox" id="finance" data-row='4'>
+                        <div class="col1">Finance cont (line 57)</div>
+                        <input type="text" pattern="[0-9]*">
+                        <div class="col3"></div>
+                        <div class="col4"></div>
+                    </div>
+                    <div class="flexbox" id="inspection" data-row='5'>
+                        <div class="col1">Inspection (line 77)</div>
+                        <input type="text"" pattern="[0-9]*">
+                        <div class="col3"></div>
+                        <div class="col4"></div>
+                    </div>
+                    <div class="flexbox" id="assoc" data-row='6'>
+                        <div class="col1">Assoc Apl (line 283)</div>
+                        <input type="text"  pattern="[0-9]*">
+                        <div class="col3"></div>
+                        <div class="col4"></div>
+                    </div>
+                    <div class="flexbox" id="estoppel" data-row='7'>
+                        <div class="col1">Estoppel (line 286)</div>
+                        <input type="text"  pattern="[0-9]*">
+                        <div class="col3"></div>
+                        <div class="col4"></div>
+                    </div>
+                </div>
+            </section>
+            <section id="copypage" class="tabcontent">
+                <h3>This is the copy values page</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    com
+                </p>
+                <p>modo consequat. </p>
+            </section>
+            <section id="loadpage" class="tabcontent">
+                <h3>This is the page to load values</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+                    aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                    dolores eos qui ratione voluptatem sequi nesciunt. </p>
+            </section>
+            <section id="helppage" class="tabcontent">
+                <h3>Instructions for use</h3>
+                <h4>Overview</h4>
+                <ul>
+                    <li>The app allows you see what dates the NABOR ASIS contract deadlines are due given the contract effective
+                        date and the number of days until these deadlines. This app is intended to give you a quick overview
+                        and all dates need to be checked and verified</li>
+                    <li> Most dates are based on the contract execution date so that date should be select first </li>
+                    <li>Since the contract specifies deadlines roll to the next business day, all computed weekend dates will
+                        roll to the following Monday </li>
+                    <li>This app has no knowledge of federal holidays so all dates need to adjusted for their occurance. The
+                        official govermant list can be found <a href="https://www.opm.gov/policy-data-oversight/snow-dismissal-procedures/federal-holidays/"
+                            target="_blank">here</a></li>
+                </ul>
+            </section>
+            <footer>
+                This is sticky footer courtesy of flexbox
+            </footer>
+        </div>
+    </div>
+    <script src="scripts\flatpickr.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/mydates.js"></script>
+    <script src="scripts/setuppage.js"></script>
+    <script src="scripts/datapage.js"></script>
+</body>
+
+</html>

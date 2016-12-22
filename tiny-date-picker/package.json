@@ -1,0 +1,100 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "tiny-date-picker",
+        "scope": null,
+        "escapedName": "tiny-date-picker",
+        "name": "tiny-date-picker",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "D:\\Users\\felix\\Desktop\\naborasis"
+    ]
+  ],
+  "_from": "tiny-date-picker@latest",
+  "_id": "tiny-date-picker@1.1.8",
+  "_inCache": true,
+  "_location": "/tiny-date-picker",
+  "_nodeVersion": "5.5.0",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/tiny-date-picker-1.1.8.tgz_1476457068044_0.8468977292068303"
+  },
+  "_npmUser": {
+    "name": "chrisdavies",
+    "email": "ferociousturtle@gmail.com"
+  },
+  "_npmVersion": "3.10.5",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "tiny-date-picker",
+    "scope": null,
+    "escapedName": "tiny-date-picker",
+    "name": "tiny-date-picker",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/tiny-date-picker/-/tiny-date-picker-1.1.8.tgz",
+  "_shasum": "cc52bb87285a54ccfe243d89588025323555b302",
+  "_shrinkwrap": null,
+  "_spec": "tiny-date-picker",
+  "_where": "D:\\Users\\felix\\Desktop\\naborasis",
+  "author": {
+    "name": "Chris Davies",
+    "email": "ferociousturtle@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/chrisdavies/tiny-date-picker/issues"
+  },
+  "dependencies": {},
+  "description": "A small, dependency-free date picker",
+  "devDependencies": {
+    "jest-cli": "^15.1.1",
+    "mversion": "^1.10.1",
+    "uglify-js": "^2.4.23",
+    "uglifycss": "0.0.21"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "cc52bb87285a54ccfe243d89588025323555b302",
+    "tarball": "https://registry.npmjs.org/tiny-date-picker/-/tiny-date-picker-1.1.8.tgz"
+  },
+  "gitHead": "93fec3c3b29b5d4a1586a4ef69463671694a66e7",
+  "homepage": "https://github.com/chrisdavies/tiny-date-picker#readme",
+  "keywords": [
+    "date",
+    "picker",
+    "date",
+    "chooser",
+    "calendar"
+  ],
+  "license": "MIT",
+  "main": "tiny-date-picker.js",
+  "maintainers": [
+    {
+      "name": "chrisdavies",
+      "email": "ferociousturtle@gmail.com"
+    }
+  ],
+  "name": "tiny-date-picker",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisdavies/tiny-date-picker.git"
+  },
+  "scripts": {
+    "bump": "mversion",
+    "min": "npm run mincss && npm run minjs",
+    "mincss": "uglifycss tiny-date-picker.css > tiny-date-picker.min.css && echo 'Minified CSS:' && cat tiny-date-picker.min.css | gzip -9f | wc -c",
+    "minjs": "uglifyjs tiny-date-picker.js --source-map tiny-date-picker.min.js.map -m -c -o tiny-date-picker.min.js && echo 'Minified JS:' && cat tiny-date-picker.min.js | gzip -9f | wc -c",
+    "test": "jest"
+  },
+  "version": "1.1.8"
+}

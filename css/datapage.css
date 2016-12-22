@@ -1,0 +1,31 @@
+#datapage .flexbox div {
+    /*border: 1px solid blue;*/
+height: 1.2em;
+width: 10em;
+padding: 2px;
+margin:3px;
+font-size: 1.1em;
+}
+#datapage div.flexbox {
+    height: 1.4em;
+    /*border: solid 1px red;*/
+    margin: 6px 3px 10px 3px;
+align-items: center;
+}
+#datapage input[type='text'] { font-size: 1em; 
+margin: 5px;
+width: 3em;}
+
+#datapage .flexbox div.col4 {
+    /*border: 1px solid green;*/
+    width: 15em;
+}
+#datapage .flexbox div.col2 {
+    /*border: 1px solid green;*/
+    width: 3em;
+}
+#datapage .flexbox div.col3 {
+    /*border: 1px solid green;*/
+    margin-left: 1em;
+}
+#rowheader {font-weight: bold;}

@@ -1,0 +1,190 @@
+body {
+    margin: 25px auto 0 auto;
+    background-color: #777;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#container {
+    margin: 0 auto;
+    width: 960px;
+    /*position: relative;*/
+    background-color: linen;
+    border: 1px solid black;
+    /*padding: 20px;*/
+    word-wrap: break-word;
+    /*overflow: auto;*/
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px black;
+    box-sizing: border-box;
+    /*display: flex;*/
+}
+
+#content {
+    margin: 15px 20px;
+    flex: 1 1 0;
+    flex-basis: 960px;
+}
+
+
+/*This is the header section that includes the logo, title, and the 
+fields for exec date and close date*/
+
+header {
+    border: solid 2px #6C8DAE;
+    font-size: 110%;
+    border-radius: 7px;
+}
+
+header input {
+    /*height: 1em;
+    font-size: 1em;*/
+    margin: 0 20px 0 0;
+    /*max-width: 900px;*/
+    /*height: 50px;*/
+}
+
+
+/*#top-fields {
+    background: #E6F0FA;
+    margin: 0px;
+    border: solid 1px green;
+    display: flex;
+    flex-flow: wrap;
+}*/
+
+
+/*#daystoclose {
+    width: 40px;
+    margin-right: 20px;
+}*/
+
+nav {
+    margin: 0px auto;
+    display: flex;
+    /*width: 900px;*/
+    align-items: flex-end;
+    flex-wrap: wrap;
+    /*border: solid 1px orange;*/
+    height: 60px;
+    /*background: hotpink*/
+}
+
+#inform {
+    /*display: flex;*/
+    flex: 1 1 0;
+    max-width: 460px;
+    height: 200px;
+    /*margin: 3px;*/
+    margin: 0px;
+    background: lightsalmon;
+}
+
+#outform {
+    /*display: flex;*/
+    flex: 1 1 0;
+    max-width: 460px;
+    height: 200px;
+    /*margin: 3px;*/
+    background: lightgreen;
+    margin: 0px;
+}
+
+.tabs {
+    height: 30px;
+    line-height: 30px;
+    background: lightgray;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    padding: 0 15px 0 15px;
+    cursor: pointer;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-right: 5px;
+}
+
+.tabs.tabselected {
+    background: linen;
+    height: 35px;
+}
+
+
+/*  Light Blue for background in tabs and background*/
+
+.tabs:hover {
+    background: #E6F0FA;
+    /*box-shadow: -2px -2px 2px 1px #888;*/
+    height: 35px;
+}
+
+footer {
+    text-align: center;
+}
+
+section {
+    height: 700px;
+    margin: 0px;
+}
+
+.flexboxforms {
+    display: flex;
+    justify-content: space-around;
+    /*align-items: stretch;*/
+    flex-wrap: wrap;
+}
+
+.tabcontent {
+    /*display: none;*/
+    padding: 0px 11px;
+     box-sizing: border-box;
+    /*border-bottom: 1px solid #6C8DAE;
+    border-left: 1px solid #6C8DAE;
+    border-right: 1px solid #6C8DAE;*/
+    background: linen;
+}
+
+
+/*#setuppage label {
+    margin-left: 10em;
+}*/
+
+#test {
+    color: blue
+}
+
+.blue-back {
+    background: #E6F0FA;
+}
+
+.red-back {
+    background: lightcoral;
+}
+
+
+/*.border {
+    border: 1px solid lightblue;
+}*/
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#logo img {
+    height: 50px;
+    margin: 0 10px 0 10px;
+    padding: 0;
+}
+
+#logo h3 {
+    margin: 0 10px 0 20px;
+    padding: 0;
+    display: inline-block;
+}

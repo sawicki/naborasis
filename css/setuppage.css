@@ -1,0 +1,40 @@
+#setuppage  .setup1col {
+    flex: 1;
+    max-width: 3em;
+    padding: 5px;
+}
+
+#setuppage {
+    color: #6C8DAE;
+}
+
+#setuppage h3 {
+    margin:2em;
+}
+
+#setuppage .flexbox label {
+    flex: 1;
+    max-width: 12em;
+    display: block;
+    text-align: right;
+    padding: 5px;
+    font-weight: bold;
+    color: black
+}
+
+#setuppage .flexbox input {
+    flex: 1;
+    max-width: 12em;
+    padding: 5px;
+}
+
+#setuppage .setup4col {
+     flex: 1;
+    max-width: 25em;
+    text-align: left;
+    padding: 5px;
+    font-weight: bold;
+    color: red;
+}
+
+/*.flexbox{border: solid 2px blue;}*/

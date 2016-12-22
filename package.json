@@ -1,0 +1,26 @@
+{
+  "name": "naborasis",
+  "version": "1.0.0",
+  "description": "Get calendar dates from Nabor ASIS Contract durations",
+  "main": "index.html",
+  "scripts": {
+    "dev": "lite-server",
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "keywords": [
+    "nabor",
+    "asis"
+  ],
+  "author": "Felix",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.2.2"
+  },
+  "dependencies": {
+    "date-fns": "^1.14.1"
+  }
+}
