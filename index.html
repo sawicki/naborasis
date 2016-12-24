@@ -20,7 +20,7 @@
             <header>
                 <div id="logo">
                     <img src="media/smalllogo.png" alt="">
-                    <h3>Date Calculator for Nabor ASIS Contract <span id="test">   </span></h3>
+                    <h3>Date Calculator for Nabor ASIS Contract</h3>
                 </div>
             </header>
             <nav>
@@ -30,52 +30,52 @@
                 <div id="loadtab" class="tabs">Load/Save</div>
                 <div id="helptab" class="tabs">Instructions</div>
             </nav>
-            <section id="setuppage" class="tabcontent">
-                <h3>1. Set Property Address</h2>
-                    <div class="flexbox">
-                        <div class="setup1col"></div>
-                        <label for="property">Property Address: </label>
-                        <input type="text" id="property" placeholder="Property Address" tabindex="1">
-                        <div class="setup4col"></div>
-                    </div>
-                    <h3>2. Set Date for Fully Executed Contract</h3>
-                    <div class="flexbox">
-                        <div class="setup1col"></div>
-                        <label for="executed-date"> Executed Contract Date: </label>
-                        <input type="text" id="executed-date" class="flatpickr" placeholder="Select executed date" tabindex="-1">
-                        <div class="setup4col"></div>
-                    </div>
-                    <h3>3. Set Either "Days to Closing" or "Closing Date"</h3>
-                    <div class="border">
-                        <div class='initial-dates'>
-                            <div class="flexbox">
-                                <div class="setup1col"></div>
-                                <label for="daystoclose">Days to closing:  </label>
-                                <input type="text" id="daystoclose" placeholder="Days" tabindex="2" pattern="[0-9]*" />
-                                <div class="setup4col" id="todaysmsg"></div>
-                            </div>
-                        </div>
+            <section id="setuppage" class="tabcontent tabcontentselected">
+                <h3>1. Set Property Address</h3>
+                <div class="flexbox">
+                    <div class="setup1col"></div>
+                    <label for="property">Property Address: </label>
+                    <input type="text" id="property" placeholder="Property Address" tabindex="1">
+                    <div class="setup4col"></div>
+                </div>
+                <h3>2. Set Date for Fully Executed Contract</h3>
+                <div class="flexbox">
+                    <div class="setup1col"></div>
+                    <label for="executed-date"> Executed Contract Date: </label>
+                    <input type="text" id="executed-date" class="flatpickr" placeholder="Select executed date" tabindex="-1">
+                    <div class="setup4col"></div>
+                </div>
+                <h3>3. Set Either "Days to Closing" or "Closing Date"</h3>
+                <div class="border">
+                    <div class='initial-dates'>
                         <div class="flexbox">
                             <div class="setup1col"></div>
-                            <div class="setup1col"></div>
-                            <div class="setup1col"></div>
-                            <div class="setup1col"></div>
-                            <div>
-                                <h4>Or </h4>
-                            </div>
+                            <label for="daystoclose">Days to closing:  </label>
+                            <input type="text" id="daystoclose" placeholder="Days" tabindex="2" pattern="[0-9]*" />
+                            <div class="setup4col" id="todaysmsg"></div>
                         </div>
-                        <div class='flexbox'>
-                            <div class="setup1col"></div>
-                            <label for="close-date">Closing Date (line 41):</label>
-                            <input type="text" id="close-date" class="flatpickr" placeholder="Closing Date" tabindex="-1">
-                            <div class="setup4col" id="closemsg"></div>
-                        </div class="border">
                     </div>
+                    <div class="flexbox">
+                        <div class="setup1col"></div>
+                        <div class="setup1col"></div>
+                        <div class="setup1col"></div>
+                        <div class="setup1col"></div>
+                        <div>
+                            <h4>Or </h4>
+                        </div>
+                    </div>
+                    <div class='flexbox'>
+                        <div class="setup1col"></div>
+                        <label for="close-date">Closing Date (line 41):</label>
+                        <input type="text" id="close-date" class="flatpickr" placeholder="Closing Date" tabindex="-1">
+                        <div class="setup4col" id="closemsg"></div>
+                    </div class="border">
+                </div>
             </section>
             <section id="datapage" class="tabcontent">
                 <h3 id="datapagetitle">Input Forms</h3>
                 <div>
-                     <div class="flexbox" id="rowheader" data-row='0'>
+                    <div class="flexbox" id="rowheader" data-row='0'>
                         <div class="col1">Commit/Contingency</div>
                         <div class="col2">Day</div>
                         <div class="col3">Date</div>
@@ -107,25 +107,25 @@
                     </div>
                     <div class="flexbox" id="inspection" data-row='5'>
                         <div class="col1">Inspection (line 77)</div>
-                        <input type="text"" pattern="[0-9]*">
-                        <div class="col3"></div>
-                        <div class="col4"></div>
+                        <input type="text" pattern="[0-9]* ">
+                        <div class="col3 "></div>
+                        <div class="col4 "></div>
                     </div>
-                    <div class="flexbox" id="assoc" data-row='6'>
+                    <div class="flexbox " id="assoc " data-row='6'>
                         <div class="col1">Assoc Apl (line 283)</div>
-                        <input type="text"  pattern="[0-9]*">
+                        <input type="text" pattern="[0-9]* ">
                         <div class="col3"></div>
                         <div class="col4"></div>
                     </div>
-                    <div class="flexbox" id="estoppel" data-row='7'>
+                    <div class="flexbox" id="estoppel " data-row='7'>
                         <div class="col1">Estoppel (line 286)</div>
-                        <input type="text"  pattern="[0-9]*">
+                        <input type="text" pattern="[0-9]* ">
                         <div class="col3"></div>
                         <div class="col4"></div>
                     </div>
                 </div>
             </section>
-            <section id="copypage" class="tabcontent">
+            <section id="copypage" class="tabcontent  ">
                 <h3>This is the copy values page</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -133,14 +133,14 @@
                 </p>
                 <p>modo consequat. </p>
             </section>
-            <section id="loadpage" class="tabcontent">
+            <section id="loadpage" class="tabcontent  ">
                 <h3>This is the page to load values</h3>
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
                     aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
                     Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
                     dolores eos qui ratione voluptatem sequi nesciunt. </p>
             </section>
-            <section id="helppage" class="tabcontent">
+            <section id="helppage" class="tabcontent ">
                 <h3>Instructions for use</h3>
                 <h4>Overview</h4>
                 <ul>
@@ -151,8 +151,8 @@
                     <li>Since the contract specifies deadlines roll to the next business day, all computed weekend dates will
                         roll to the following Monday </li>
                     <li>This app has no knowledge of federal holidays so all dates need to adjusted for their occurance. The
-                        official govermant list can be found <a href="https://www.opm.gov/policy-data-oversight/snow-dismissal-procedures/federal-holidays/"
-                            target="_blank">here</a></li>
+                        official govermant list can be found <a href="https://www.opm.gov/policy-data-oversight/snow-dismissal-procedures/federal-holidays/ "
+                            target="_blank ">here</a></li>
                 </ul>
             </section>
             <footer>
@@ -160,11 +160,11 @@
             </footer>
         </div>
     </div>
-    <script src="scripts\flatpickr.min.js"></script>
-    <script src="scripts/main.js"></script>
-    <script src="scripts/mydates.js"></script>
-    <script src="scripts/setuppage.js"></script>
-    <script src="scripts/datapage.js"></script>
+    <script src="scripts/flatpickr.min.js "></script>
+    <script src="scripts/main.js "></script>
+    <script src="scripts/mydates.js "></script>
+    <script src="scripts/setuppage.js "></script>
+    <script src="scripts/datapage.js "></script>
 </body>
 
 </html>

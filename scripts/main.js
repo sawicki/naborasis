@@ -54,28 +54,19 @@ function tabClick(e) {
         "helptab": "helppage"
     };
 
-    var tabs = document.getElementsByClassName("tabs");
-    for (let i = 0; i < tabs.length; i++) {
-        // tabs[i].style.backgroundColor = "lightgrey";
-        tabs[i].classList.remove("tabselected");
-    }
+    // remove tabselectedcontent from current pagecontainers
+
+
+    var curTab = document.querySelector(".tabselected");
+    var curPage = document.getElementById(tabObject[curTab.id]);
+
+
+    curTab.classList.remove("tabselected");
+    curPage.classList.remove("tabcontentselected");
+
     this.classList.add("tabselected");
-    var pagecontainers = document.getElementsByClassName("tabcontent");
-    let selectedPage = document.getElementById(tabObject[this.id]);
-    for (let i = 0; i < pagecontainers.length; i++) {
-        pagecontainers[i].style.display = "none";
-    }
-    selectedPage.style.display = "block";
-    // alert(this.id);
+    var selectedPageID = tabObject[this.id];
+    var selectedPage = document.getElementById(selectedPageID);
+    selectedPage.classList.add("tabcontentselected");
+
 }
-
-
-
-// this is the end of the function definitions
-
-var pagecontainers = document.getElementsByClassName("tabcontent");
-for (let i = 0; i < pagecontainers.length; i++) {
-    pagecontainers[i].style.display = "none";
-}
-// document.getElementById("datatab").style.backgroundColor = "linen";
-document.getElementById("setuppage").style.display = "block";

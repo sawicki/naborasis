@@ -1,3 +1,7 @@
+* {
+    border: 1px solid transparent;
+}
+
 body {
     margin: 25px auto 0 auto;
     background-color: #777;
@@ -24,7 +28,7 @@ body {
 #content {
     margin: 15px 20px;
     flex: 1 1 0;
-    flex-basis: 960px;
+    /*flex-basis: 960px;*/
 }
 
 
@@ -124,8 +128,9 @@ footer {
 }
 
 section {
-    height: 700px;
+    height:600px;
     margin: 0px;
+    box-sizing: border-box;
 }
 
 .flexboxforms {
@@ -138,11 +143,17 @@ section {
 .tabcontent {
     /*display: none;*/
     padding: 0px 11px;
-     box-sizing: border-box;
+    box-sizing: border-box;
     /*border-bottom: 1px solid #6C8DAE;
     border-left: 1px solid #6C8DAE;
     border-right: 1px solid #6C8DAE;*/
     background: linen;
+    display: none;
+}
+
+ .tabcontent.tabcontentselected {
+    display: block;
+    height: 600px;
 }
 
 
