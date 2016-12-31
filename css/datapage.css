@@ -29,3 +29,10 @@ width: 3em;}
     margin-left: 1em;
 }
 #rowheader {font-weight: bold;}
+#datapage h4{
+   padding: 1em 1em 0em 1em;
+   /*height: 2em;*/
+   /*border: 1px solid red;*/
+   /*background: lightskyblue;*/
+   color: #6C8DAE;
+}

@@ -1,4 +1,4 @@
-debugger;
+// debugger;
 var contract = {
     propertyAdd: "",
     execDate: "",
@@ -6,7 +6,7 @@ var contract = {
     closeDate: "",
     dataFields: []
 }
-var gDaysToCloseLast = false;
+
 
 var weekendAdd = [1, 0, 0, 0, 0, 0, 2];
 
@@ -15,6 +15,12 @@ var weekendAdd = [1, 0, 0, 0, 0, 0, 2];
 //
 
 
+function cl(label, obj) {
+    console.log(label);
+    console.log(obj);
+
+
+}
 
 
 
@@ -23,6 +29,8 @@ var fldExecuted = document.getElementById("executed-date");
 var fldToClosed = document.getElementById("daystoclose");
 var fldClosing = document.getElementById("close-date");
 var fldClosingAlert = document.getElementById("closemsg");
+
+
 
 
 // 

@@ -5,6 +5,50 @@ fldExecuted.addEventListener('change', executedChanged, false);
 fldToClosed.addEventListener('keyup', daystoChanged, false);
 fldToClosed.addEventListener('blur', daystoChanged, false);
 fldClosing.addEventListener("change", closingChanged, false);
+
+setUpPageInit();
+
+function setUpPageInit() {
+    // get local store if avail
+
+    if (typeof (Storage) === "undefined") {
+        return;
+    }
+
+    var localStore = localStorage.getItem('naborasis');
+    if (localStore === null) {
+        return;
+    }
+
+    contract = JSON.parse(localStore);
+    contract.execDate = new Date(contract.execDate);
+    contract.closeDate = new Date(contract.closeDate);
+    fldProperty.value = contract.propertyAdd;
+    fldExecuted.value = contract.execDate.toDateString();
+    fldToClosed.value = contract.daysToClose;
+    fldClosing.value = contract.closeDate.toDateString();
+    var datafields = contract.dataFields;
+    for (var i = 0; i < datafields.length; i++) {
+        var curField = datafields[i];
+
+        if (curField != null) {
+            curField = curField.split('|')
+            var childEl = document.getElementById(curField[0]).children;
+
+            childEl[1].value = parseInt(curField[1]);
+           console.log('Field = ' + parseInt(curField[1]) );
+            childEl[2].innerHTML = curField[2];
+            if (curField[3] != undefined) childEl[3].innerHTML = curField[3]; 
+        }
+        
+
+    }
+
+
+
+
+
+}
 // Initial Dates for Executed and Closed
 
 function executedChanged() {
@@ -23,7 +67,7 @@ function executedChanged() {
     fldClosing.classList.remove("blue-back");
     document.getElementById("closemsg").innerHTML = "";
     document.getElementById("todaysmsg").innerHTML = "";
-    document.getElementById('datapagetitle').innerHTML = "Execution Date/Close Date = " + contract.execDate.toDateString()+'/' ;
+    document.getElementById('datapagetitle').innerHTML = "Execution Date/Close Date = " + contract.execDate.toDateString() + '/';
 
 
     // if (contract.daysToClose === ""){return}
@@ -124,7 +168,7 @@ function closingChanged(e) {
     document.getElementById("closemsg").innerHTML = "";
 
     fldClosing.value = contract.closeDate.toDateString();
-    
+
 
     gDaysToCloseLast = false;
 }
@@ -138,11 +182,11 @@ function daystoChanged(e) {
     //         return;
     //     }
     // }
-   if (isNaN(this.value)) {
+    if (isNaN(this.value)) {
 
         this.value = '';
         fldToClosed.classList.remove("blue-back");
-         contract.closeDate = '';
+        contract.closeDate = '';
         fldClosing.value = '';
         return;
     }
@@ -151,7 +195,7 @@ function daystoChanged(e) {
         document.getElementById("todaysmsg").innerHTML = "Please set contract execution date first";
         fldToClosed.value = "";
         fldToClosed.classList.remove("blue-back");
-       
+
         return;
     }
     contract.daysToClose = this.value;
@@ -173,7 +217,7 @@ function daystoChanged(e) {
         document.getElementById("closemsg").innerHTML = ""
     }
     fldClosing.value = contract.closeDate.toDateString();
-    
+
     fldClosing.classList.remove("blue-back");
     fldClosing.classList.remove("red-back");
     fldToClosed.classList.add("blue-back");

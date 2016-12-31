@@ -8,8 +8,9 @@
     color: #6C8DAE;
 }
 
-#setuppage h3 {
-    margin:2em;
+#setuppage h3{
+   padding-top: 3em;
+   color: #6C8DAE;
 }
 
 #setuppage .flexbox label {
@@ -23,13 +24,13 @@
 }
 
 #setuppage .flexbox input {
-    flex: 1;
+    /*flex: 1;*/
     max-width: 12em;
     padding: 5px;
 }
 
 #setuppage .setup4col {
-     flex: 1;
+     /*flex: 1;*/
     max-width: 25em;
     text-align: left;
     padding: 5px;

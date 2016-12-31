@@ -83,49 +83,51 @@
                     </div>
                     <div class="flexbox" id="escrow1" data-row='1'>
                         <div class="col1">Escrow 1 (line 24)</div>
-                        <input type="text" pattern="[0-9]*">
+                        <input type="text" placeholder="3">
                         <div class="col3"></div>
                         <div class="col4"></div>
                     </div>
                     <div class="flexbox" id="escrow2" data-row='2'>
                         <div class="col1">Escrow 2 (line 25)</div>
-                        <input type="text" pattern="[0-9]*">
+                        <input type="text" pattern="[0-9]*" placeholder="16">
                         <div class="col3"></div>
                         <div class="col4"></div>
                     </div>
                     <div class="flexbox" id="loanapp" data-row='3'>
                         <div class="col1">Loan App (line 54)</div>
-                        <input type="text" pattern="[0-9]*">
+                        <input type="text" pattern="[0-9]*" placeholder="5">
                         <div class="col3"></div>
                         <div class="col4"></div>
                     </div>
                     <div class="flexbox" id="finance" data-row='4'>
                         <div class="col1">Finance cont (line 57)</div>
-                        <input type="text" pattern="[0-9]*">
+                        <input type="text" pattern="[0-9]*" placeholder="45">
                         <div class="col3"></div>
                         <div class="col4"></div>
                     </div>
                     <div class="flexbox" id="inspection" data-row='5'>
                         <div class="col1">Inspection (line 77)</div>
-                        <input type="text" pattern="[0-9]* ">
+                        <input type="text" pattern="[0-9]*">
                         <div class="col3 "></div>
                         <div class="col4 "></div>
                     </div>
-                    <div class="flexbox " id="assoc " data-row='6'>
-                        <div class="col1">Assoc Apl (line 283)</div>
-                        <input type="text" pattern="[0-9]* ">
+                    <div data-row="7">
+                        <h4>The following are needed for HOAs and Condos</h4>
+                    </div>
+                    <div class="flexbox " id="assoc" data-row='6'>
+                        <div class="col1">Assoc Appl (line 283)</div>
+                        <!--<input type="text" pattern="[0-9]*" placeholder="10">-->
                         <div class="col3"></div>
                         <div class="col4"></div>
                     </div>
-                    <div class="flexbox" id="estoppel " data-row='7'>
-                        <div class="col1">Estoppel (line 286)</div>
-                        <input type="text" pattern="[0-9]* ">
+                    <div class="flexbox" id="estoppel" data-row="8">
+                        <div class="col1">HOA Docs (line 286)</div>
                         <div class="col3"></div>
                         <div class="col4"></div>
                     </div>
                 </div>
             </section>
-            <section id="copypage" class="tabcontent  ">
+            <section id="copypage" class="tabcontent">
                 <h3>This is the copy values page</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -133,14 +135,29 @@
                 </p>
                 <p>modo consequat. </p>
             </section>
-            <section id="loadpage" class="tabcontent  ">
-                <h3>This is the page to load values</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-                    aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-                    dolores eos qui ratione voluptatem sequi nesciunt. </p>
+            <section id="loadpage" class="tabcontent">
+                <h3>This page is used to save and load  values</h3>
+                <ul>
+                    <li>Contents of the "Set Up" and "Data" pages are saved automatically to you local computer storage when you
+                    open this page. In normal use these values will be automatically loaded when you reopen this app.</li>
+                    <li>If you prefer not to store thise values, you can use the clear button below. This clears all values in the
+                    app and your local storage. If you never visit this page,  nothing will be saved.</li>
+                    <li>For more permenant storage of your data or do move your data to another computer,  grab the json string below and it can be reloaded at a later date</li>
+                <li>None of you data exists anywhere except on your computer.  This is a local application</li>
+                </ul>
+                
+                <div id='loadpageio'>
+                    <label for="clearbutton">Clear button removes all app and local values
+                    </label>
+                    <button id="clear">Clear</button>
+                    <p class='flexbox'>
+                    <textarea id='jsonarea' rows="7" cols="50"></textarea>
+                    
+                    <button id="loadjson">Load Data</button>
+                    </p> loadpageio
+                </div>
             </section>
-            <section id="helppage" class="tabcontent ">
+            <section id="helppage" class="tabcontent">
                 <h3>Instructions for use</h3>
                 <h4>Overview</h4>
                 <ul>
@@ -165,6 +182,7 @@
     <script src="scripts/mydates.js "></script>
     <script src="scripts/setuppage.js "></script>
     <script src="scripts/datapage.js "></script>
+    <script src="scripts/savepage.js "></script>
 </body>
 
 </html>
