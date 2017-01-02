@@ -4,7 +4,9 @@
 
 body {
     margin: 25px auto 0 auto;
-    background-color: #777;
+    /*background-color: #777;*/
+    background-image: url(/media/real_cf.png);
+    background-repeat: repeat;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;

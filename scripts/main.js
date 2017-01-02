@@ -15,14 +15,6 @@ var weekendAdd = [1, 0, 0, 0, 0, 0, 2];
 //
 
 
-function cl(label, obj) {
-    console.log(label);
-    console.log(obj);
-
-
-}
-
-
 
 var fldProperty = document.getElementById("property");
 var fldExecuted = document.getElementById("executed-date");
@@ -46,12 +38,6 @@ document.getElementById("helptab").addEventListener("click", tabClick);
 
 
 flatpickr(".flatpickr");
-
-
-// TinyDatePicker(document.querySelector('#executed-date'));
-// TinyDatePicker(document.querySelector('#close-date'));
-
-
 
 function tabClick(e) {
     var tabObject = {

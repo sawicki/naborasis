@@ -8,8 +8,7 @@ function savePageInit(){
         var strContract = JSON.stringify(contract)
     localStorage.setItem('naborasis',strContract);
     document.getElementById('jsonarea').value = strContract;
-    cl('contract',contract);
-    
+      
 
 } else {
     // Sorry! No Web Storage support..

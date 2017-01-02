@@ -69,63 +69,14 @@ function executedChanged() {
     document.getElementById("todaysmsg").innerHTML = "";
     document.getElementById('datapagetitle').innerHTML = "Execution Date/Close Date = " + contract.execDate.toDateString() + '/';
 
-
-    // if (contract.daysToClose === ""){return}
-    // addDays(contract.execDate, contract.daysToClose, fldClosing);
-
-    // fldToClosed.value = "";
-    // fldClosing.value = "";
-    // contract.closeDate = "";
-    // contract.daysToClose ="";
-    // 
     return;
 
 }
 
-// function fieldChange(e) {
-//     if (e.type !== "blur") {
-//         var key = event.which || event.keyCode;
-//         if (key !== 13) {
-//             return
-//         }
-//     }
 
-
-
-
-//     document.getElementById("test").innerHTML = "   The field Changed was  " + this.id + '  event type =  ' + e.type + 'value = ' +  this.value;
-
-//     switch (this.id) {
-//         case "daystoclose":
-//             daystoChanged(this.value);
-//             break;
-//         case "property":
-//             propertyChanged(this.value);
-//             break;
-//         case "close-date":
-//             closingChanged(this.value);
-//             break;
-//         default:
-//             return;
-
-
-//     }
-// }
 
 function propertyChanged(e) {
-    // if (e.type !== "blur") {
-    //     var key = event.which || event.keyCode;
-    //     if (key !== 13) {
-    //         return
-    //     }
-    //     if (this.value !== "") {
-    //         contract.propertyAdd = this.value;
-    //         fldProperty.classList.add("blue-back");
-    //     } else {
-    //         contract.propertyAdd = this.value;
-    //         fldProperty.classList.remove("blue-back");
-    //     }
-    // }
+   
 
     if (this.value.length >= 45) {
         this.value = this.value.slice(0, 45);
@@ -176,12 +127,7 @@ function closingChanged(e) {
 //--------------------------------------------------------
 
 function daystoChanged(e) {
-    // if (e.type !== "blur") {
-    //     var key = event.which || event.keyCode;
-    //     if (key !== 13) {
-    //         return;
-    //     }
-    // }
+    
     if (isNaN(this.value)) {
 
         this.value = '';

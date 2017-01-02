@@ -129,32 +129,32 @@
             </section>
             <section id="copypage" class="tabcontent">
                 <h3>This is the copy values page</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                <p id='copypagetext'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                     com
                 </p>
-                <p>modo consequat. </p>
+               
             </section>
             <section id="loadpage" class="tabcontent">
-                <h3>This page is used to save and load  values</h3>
+                <h3>This page is used to save and load values</h3>
                 <ul>
-                    <li>Contents of the "Set Up" and "Data" pages are saved automatically to you local computer storage when you
-                    open this page. In normal use these values will be automatically loaded when you reopen this app.</li>
-                    <li>If you prefer not to store thise values, you can use the clear button below. This clears all values in the
-                    app and your local storage. If you never visit this page,  nothing will be saved.</li>
-                    <li>For more permenant storage of your data or do move your data to another computer,  grab the json string below and it can be reloaded at a later date</li>
-                <li>None of you data exists anywhere except on your computer.  This is a local application</li>
+                    <li>Contents of the "Set Up" and "Data" pages are saved automatically to you local computer storage when
+                        you open this page. In normal use these values will be automatically loaded when you reopen this
+                        app.</li>
+                    <li>If you prefer not to store thise values, you can use the clear button below. This clears all values in
+                        the app and your local storage. If you never visit this page, nothing will be saved.</li>
+                    <li>For more permenant storage of your data or do move your data to another computer, grab the json string
+                        below and it can be reloaded at a later date</li>
+                    <li>None of you data exists anywhere except on your computer. This is a local application</li>
                 </ul>
-                
                 <div id='loadpageio'>
                     <label for="clearbutton">Clear button removes all app and local values
                     </label>
                     <button id="clear">Clear</button>
                     <p class='flexbox'>
-                    <textarea id='jsonarea' rows="7" cols="50"></textarea>
-                    
-                    <button id="loadjson">Load Data</button>
-                    </p> loadpageio
+                        <textarea id='jsonarea' rows="7" cols="55"></textarea>
+                        <button id="loadjson">Load Data</button>
+                    </p>
                 </div>
             </section>
             <section id="helppage" class="tabcontent">
@@ -182,6 +182,7 @@
     <script src="scripts/mydates.js "></script>
     <script src="scripts/setuppage.js "></script>
     <script src="scripts/datapage.js "></script>
+    <script src="scripts/copypage.js "></script>
     <script src="scripts/savepage.js "></script>
 </body>
 
